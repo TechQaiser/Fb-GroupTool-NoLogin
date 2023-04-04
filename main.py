@@ -1,4 +1,8 @@
-from requests import get
+try:
+	from requests import get
+except:
+	os.system('pip install requests')
+	from requests import get
 import codecs, sys, os
 from time import sleep
 from re import findall,search
