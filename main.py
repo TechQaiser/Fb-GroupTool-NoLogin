@@ -1,9 +1,9 @@
+import codecs, sys, os
 try:
 	from requests import get
 except:
 	os.system('pip install requests')
 	from requests import get
-import codecs, sys, os
 from time import sleep
 from re import findall,search
 from random import choice
